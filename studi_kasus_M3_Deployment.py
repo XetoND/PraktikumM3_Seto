@@ -88,7 +88,7 @@ if df is not None:
         fitur_y = st.selectbox("Fitur Y", fitur_cluster, index=1)
 
         fig, ax = plt.subplots()
-        sns.scatterplot(data=df, x=fitur_x, y=fitur_y, hue='cluster', palette='viridis', ax=ax)
+        sns.scatterplot(data=df, x=fitur_x, y=fitur_y, hue='cluster', palette='Set1', ax=ax)
         st.pyplot(fig)
     else:
         st.warning("Kolom untuk clustering tidak lengkap.")
